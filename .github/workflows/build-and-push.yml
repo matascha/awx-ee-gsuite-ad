@@ -29,3 +29,5 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: ghcr.io/matascha/awx-ee-gsuite-ad:latest
+          labels: |
+            org.opencontainers.image.source=https://github.com/matascha/awx-ee-gsuite-ad
