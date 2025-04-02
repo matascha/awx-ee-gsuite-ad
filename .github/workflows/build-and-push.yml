@@ -23,9 +23,9 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build and push Docker image
-        uses: docker/build-push-action@v2
+        uses: docker/build-push-action@v4
         with:
           context: .
-          file: Dockerfile
+          file: ./Dockerfile
           push: true
-          tags: ghcr.io/${{ github.actor }}/awx-ee-gsuite-ad:latest
+          tags: ghcr.io/matascha/awx-ee-gsuite-ad:latest
